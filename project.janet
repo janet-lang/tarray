@@ -2,8 +2,8 @@
   :name "typed-arrays"
   :author "Calvin Rose"
   :license "MIT"
-  :url "https://github.com/janet-lang/typed-arrays"
-  :repo "git+https://github.com/janet-lang/typed-arrays")
+  :url "https://github.com/janet-lang/tarray"
+  :repo "git+https://github.com/janet-lang/tarray")
 
 (declare-native
  :name "tarray"
