@@ -11,3 +11,25 @@ Use like so:
 
 (tarray/new ...)
 ```
+
+## Native modules that depend on typed arrays
+
+To use typed arrays from C code, you add `:native-deps` to
+the `declare-native` call in `jpm`. See `tarray.h` for available
+library functions.
+
+
+```
+(declare-native
+   :name "my-native-library"
+   :source "lib.c"
+   :native-deps ["tarray"])
+```
+
+In `lib.c`:
+
+```
+#include <tarray.h>
+
+...
+```
